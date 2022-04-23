@@ -1,0 +1,61 @@
+
+#content-div {
+    background-color: white;
+
+}
+
+#page-div {
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(74,16,121,1) 35%, rgba(160,51,238,1) 100%);
+    background: rgb(71,20,108);
+    background: radial-gradient(circle, rgba(71,20,108,1) 2%, rgba(117,44,170,1) 69%, rgba(83,17,17,1) 100%);*/
+    background-color: rgba(74,16,121,1);
+    border-bottom-right-radius: 10vh;
+    box-shadow: 3px 0px 10px 3px #888888;
+}
+
+#mainH1, #captionMainH1 {
+    color: white;
+}
+
+#captionMainH1 {
+    padding-bottom: 10vh;
+}
+
+#logo {
+    height: 7vh;
+    margin-top: 10vh;
+    margin-left: 3vh;
+}
+
+
+
+.cardImages {
+    width: 100px;
+    margin: 30px 0;
+}
+
+
+#navbarCustomization {
+    background-color: #2b0b51;
+}
+
+#brandLink {
+    color: white;
+}
+
+#captionDiv {
+    margin-top: 5vh;
+}
+
+.cardTextCustomization {
+    padding-bottom: 30px;
+}
+
+#rowOfCards {
+    margin-top: 50px;
+}
+
+#captionSubText {
+    padding-top: 20px;
+}
