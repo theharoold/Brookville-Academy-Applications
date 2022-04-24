@@ -15,3 +15,13 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#submitRow {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#submitBtn {
+    box-shadow: 3px 0px 10px 3px #888888;
+
+}

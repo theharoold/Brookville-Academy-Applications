@@ -29,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="/applyNow">Apply</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Students</a>
+                        <a class="nav-link" href="/students">Students</a>
                       </li>
                     </ul>
                   </div>
@@ -41,56 +41,62 @@
             <p class="text-muted text-center">Just fill out the form below, and one of our representatives will contact you, if you're chosen.</p>
 
             <div id="formDiv">
-                <form>
+                <form action="/applyNow" method="post">
                     <div class="row">
                         <div class="col-md-6 col-xs-12">
                             <label for="inputFirstName" class="form-label">First name:</label>
-                            <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="inputFirstName">
+                            <input type="text" name="first_name" class="form-control" placeholder="First name" aria-label="First name" id="inputFirstName">
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <label for="inputLastName" class="form-label">Last name:</label>
-                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="inputLastName">
+                            <input type="text" name="last_name" class="form-control" placeholder="Last name" aria-label="Last name" id="inputLastName">
                         </div>
                     </div>
                     <p>Date of birth</p>
                     <div class="row">
                         <div class="col-md-4 col-xs-12">
-                            <input type="number" class="form-control" min="1" max="12" placeholder="Month">
+                            <input type="number" name="month" class="form-control" min="1" max="12" placeholder="Month">
                         </div>
                         <div class="col-md-4 col-xs-12">
-                            <input type="number" class="form-control" min="1" max="31" placeholder="Day">
+                            <input type="number" name="day" class="form-control" min="1" max="31" placeholder="Day">
                         </div>
                         <div class="col-md-4 col-xs-12">
-                            <input type="number" class="form-control" min="1900" max="2022" placeholder="Year">
+                            <input type="number" name="year" class="form-control" min="1900" max="2022" placeholder="Year">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 col-xs-12">
                             <label for="inputAddress" class="form-label">Address:</label>
-                            <input type="text" class="form-control" placeholder="123 ABC Lane" aria-label="Address" id="inputAddress">
+                            <input type="text" name="address" class="form-control" placeholder="123 ABC Lane" aria-label="Address" id="inputAddress">
                         </div>
                         <div class="col-md-3 col-xs-12">
                             <label for="inputZIP" class="form-label">ZIP Code:</label>
-                            <input type="text" class="form-control" placeholder="12345" aria-label="ZIP Code" id="inputZIP">
+                            <input type="text" name="zip_code" class="form-control" placeholder="12345" aria-label="ZIP Code" id="inputZIP">
                         </div>
                         <div class="col-md-3 col-xs-12">
                             <label for="inputCity" class="form-label">City:</label>
-                            <input type="text" class="form-control" placeholder="London" aria-label="City" id="inputCity">
+                            <input type="text" name="city" class="form-control" placeholder="London" aria-label="City" id="inputCity">
                         </div>
                         <div class="col-md-3 col-xs-12">
                             <label for="inputCountry" class="form-label">Country:</label>
-                            <input type="text" class="form-control" placeholder="England" aria-label="Country" id="inputCountry">
+                            <input type="text" name="country" class="form-control" placeholder="England" aria-label="Country" id="inputCountry">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-xs-12">
                             <label for="inputEmail" class="form-label">Email:</label>
-                            <input type="text" class="form-control" placeholder="john.johnson@email.com" aria-label="Email" id="inputEmail">
+                            <input type="text" name="email" class="form-control" placeholder="john.johnson@email.com" aria-label="Email" id="inputEmail">
                         </div>
                         <div class="col-md-6 col-xs-12">
                             <label for="inputPhone" class="form-label">Phone number:</label>
-                            <input type="text" class="form-control" placeholder="+44 20 1234 5678" aria-label="Phone number" id="inputPhone">
+                            <input type="text" name="phone_number" class="form-control" placeholder="+44 20 1234 5678" aria-label="Phone number" id="inputPhone">
                         </div>
+                    </div>
+                    <div class="row" id="submitRow">
+                        <div class="col-xs-12 text-center">
+                            <button type="submit" class="btn btn-dark" id="submitBtn"><h5>Submit</h5></button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

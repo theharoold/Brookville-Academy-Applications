@@ -1,0 +1,12 @@
+#navBarCustomization {
+    background-color: rgba(74,16,121,1);
+    box-shadow: 3px 0px 10px 3px #888888;
+}
+
+#contentDiv {
+    margin-top: 100px;
+}
+
+#tableDiv {
+    margin-top: 100px;
+}
